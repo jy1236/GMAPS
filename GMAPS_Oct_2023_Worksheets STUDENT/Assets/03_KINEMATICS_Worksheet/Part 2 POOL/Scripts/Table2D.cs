@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Table2D : MonoBehaviour
+/*public class Table2D : MonoBehaviour
 {
     public List<Ball2D> balls;
 
@@ -33,4 +33,4 @@ public class Table2D : MonoBehaviour
             Debug.Log("COLLISION!");
         }
     }
-}
+}*/
