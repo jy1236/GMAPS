@@ -193,10 +193,14 @@ public static bool operator !=(HMatrix2D left, HMatrix2D right)
         entries[1, 1] = Mathf.Cos(rad);
    }
 
-   // public void setScalingMat(float scaleX, float scaleY)
-   // {
-        // your code here
-   // }
+      public void setScalingMat(float scaleX, float scaleY)
+        {
+            entries[0, 0] = scaleX;
+            entries[1, 1] = scaleY;
+
+            // your code here
+            setIdentity();
+        }
 
     public void Print()
     {
