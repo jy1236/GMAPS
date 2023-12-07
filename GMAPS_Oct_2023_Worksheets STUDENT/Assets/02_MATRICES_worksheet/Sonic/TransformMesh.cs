@@ -34,18 +34,18 @@ public class TransformMesh : MonoBehaviour
         pos = transformMatrix * pos;
     }
 
-    void rotate(float angle)
-    {
-        toOriginMatrix.setTranslationMat(- pos.x, - pos.y);
-        fromOriginMatrix.setTranslationMat(pos.x, pos.y);
+   // void rotate(float angle)
+    //{
+   //     toOriginMatrix.setTranslationMat(- pos.x, - pos.y);
+   //     fromOriginMatrix.setTranslationMat(pos.x, pos.y);
 
-        rotateMatrix.setRotationMat(angle);
+  //      rotateMatrix.setRotationMat(angle);
 
-        transformMatrix.setIdentity();
-        transformMatrix = fromOriginMatrix * rotateMatrix * toOriginMatrix;
+  //      transformMatrix.setIdentity();
+   //     transformMatrix = fromOriginMatrix * rotateMatrix * toOriginMatrix;
 
-        Transform();
-    }
+  //      Transform();
+  //  }
 
     private void Transform()
         {
